@@ -1,0 +1,13 @@
+jupyter
+matplotlib
+numpy
+pandas
+quinine
+scikit-learn
+seaborn
+torch
+tqdm
+transformers
+wandb
+xgboost
+protobuf

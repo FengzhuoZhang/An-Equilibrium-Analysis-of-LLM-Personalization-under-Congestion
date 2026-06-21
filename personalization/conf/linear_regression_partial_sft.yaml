@@ -1,0 +1,42 @@
+inherit: 
+    - base.yaml
+
+
+model:
+    n_dims: 30
+    n_positions: 1031
+
+training:
+    task: noisy_linear_regression_partial
+    batch_size: 480
+    dataset_size: 64
+    epochs: 10
+    learning_rate: 0.0001
+    save_every_steps: 1000
+    keep_every_steps: 100000
+    keep_every_epochs: 100
+    curriculum:
+        points:
+            start: 1031
+            end: 1031
+            inc: 2
+            interval: 2000
+        dims:
+            start: 30
+            end: 30
+            inc: 1
+            interval: 2000
+    decay_factor: 0.0
+    train_steps: 60001
+
+task:
+    reserved_dims: 30
+    reserved_basis_type: "eye"
+    device: "cuda"
+    noise_std: 0.5
+
+out_dir: ./models/sft/noisy_linear_regression_partial
+
+
+wandb:
+    name: "sft_linear_regression_partial_standard"
