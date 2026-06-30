@@ -9,10 +9,10 @@ personalization and compute congestion. It has two main parts:
    partial observations, including ICL pretraining, SFT, and checkpoint
    evaluation.
 
-The accompanying manuscript is included as:
+The accompanying *manuscript* is included as:
 
 ```text
-Personalization_and_Compute_Congestion_in_LLM_Services_arxiv.pdf
+Supervised Fine-Tuning vs In-Context Learning An Equilibrium Analysis of LLM Personalization under Congestion.pdf
 ```
 
 ## Repository Layout
